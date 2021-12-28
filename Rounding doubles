@@ -1,0 +1,12 @@
+public static BigDecimal oneThird (double x) {
+
+        double y = x/3;
+
+        int decimalsToConsider = 2;
+
+        BigDecimal bigDecimal = new BigDecimal(y);
+        BigDecimal roundedWithScale = bigDecimal.setScale(2, BigDecimal.ROUND_HALF_UP);
+        //System.out.println();
+
+        return roundedWithScale;
+    }
